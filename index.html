@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETCH-A-SKETCH</title>
+    <link href="sketch.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="sketch.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ETCH-A-SKETCH</h1>
+        Welcome to your sketch area
+    </header>
+    <p>Input status</p>
+    <div class="columns">
+        <section class="functions-column">
+            <input type="number" id="inputSize"  placeholder="Enter size" onchange="changeSize(this.value)">
+            <button id="change_size">Change size</button>
+            <input type="color" id="inputDrawingColor">
+            <button class="draw">Draw</button>
+            <button class="delete">Erase</button>
+            <!--<button class="clear">Clear All</button>-->
+            <button class="clear" onclick="reset()">Reset</button>
+        </section>
+            
+        <section class="drawing-board">
+            <div class="board"></div>
+        </section>
+    </div>
+    
+    <footer>
+        <h3>Copyright &copy; Tech Trends 2022</h3>
+      </footer>
+</body>
+</html>
