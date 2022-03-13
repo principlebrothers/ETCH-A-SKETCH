@@ -17,14 +17,16 @@ header{
     margin-top: 20px;
     text-shadow: 2px 2px 5px lightblue;
 }
+
 p{
-    margin-left: 15px;
+    text-align: center;
     color: black;
     font-size: 24px;
     background-color: white;
-    width: max-content;
+    margin-bottom: 10px;
     text-shadow: 2px 2px gray;
 }
+
 .columns{
     display: flex;
     gap: 1rem;

@@ -22,7 +22,7 @@ function createGrid(size){
     //Sketch OR Draw function
     function sketch(){
         draw.addEventListener('click', () =>{
-            gridBox.addEventListener('mouseover',() =>{
+            gridBox.addEventListener('click',() =>{
                 let color = document.getElementById('inputDrawingColor').value;
                 gridBox.style.backgroundColor = color;
             })
@@ -33,7 +33,7 @@ function createGrid(size){
     function eraser(){
         let erase = document.querySelector('.delete');
         erase.addEventListener('click', ()=>{
-            gridBox.addEventListener('mouseover', ()=>{
+            gridBox.addEventListener('click', ()=>{
                 gridBox.style.backgroundColor = 'lightgray';
             })
         })
